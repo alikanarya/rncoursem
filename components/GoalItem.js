@@ -1,6 +1,7 @@
 import { StyleSheet, View, Text, Pressable } from 'react-native';
 
 function GoalItem(props) {
+  
   return (
     <View style={styles.goalItem}>
       <Pressable 
@@ -16,6 +17,7 @@ function GoalItem(props) {
 }
 
 export default GoalItem;
+
 
 const styles = StyleSheet.create({
   goalItem: {

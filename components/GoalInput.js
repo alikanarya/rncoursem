@@ -7,15 +7,19 @@ import {
 import { useState } from 'react';
 
 function GoalInput(props) {
+  
   const [enteredGoalText, setEnteredGoalText] = useState('');
+  
   function goalInputHandler(enteredText) {
     //console.log(enteredText);
     setEnteredGoalText(enteredText);
   };  
+  
   function addGoalHandler() {
     props.onAddGoal(enteredGoalText);
     setEnteredGoalText('');
   }
+  
   return (
       <View style={styles.inputContainer}>
         <TextInput style={styles.textInput} 
@@ -30,6 +34,7 @@ function GoalInput(props) {
 };
 
 export default GoalInput;
+
 
 const styles = StyleSheet.create({
   inputContainer: {
