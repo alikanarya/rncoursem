@@ -3,6 +3,7 @@ import {
   View, 
   Button, 
   TextInput, 
+  Modal
 } from 'react-native';
 import { useState } from 'react';
 
@@ -21,6 +22,7 @@ function GoalInput(props) {
   }
   
   return (
+    <Modal>
       <View style={styles.inputContainer}>
         <TextInput style={styles.textInput} 
           placeholder='Input your course goal!'
@@ -30,6 +32,7 @@ function GoalInput(props) {
 {/*        <Button title='Add Goal' onPress={addGoalHandler}></Button> */}
         <Button title='Add Goal' onPress={addGoalHandler}></Button>
       </View>
+    </Modal>
   );
 };
 
